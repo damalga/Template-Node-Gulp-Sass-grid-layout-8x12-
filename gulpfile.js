@@ -15,5 +15,5 @@ gulp.task('sass', function(){
 });
 
 gulp.task('default', function(){
-  gulp.watch('./sass/_colors.sass', './sass/_fonts.sass', './sass/_main.sass', './sass/_reset.sass', './sass/_scaffolding.sass' ['sass']);
+  gulp.watch('./sass/*.sass', ['sass']);
 });
