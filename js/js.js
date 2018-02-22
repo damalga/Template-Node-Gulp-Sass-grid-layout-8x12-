@@ -1,23 +1,20 @@
 $(document).ready(function(){
-  $("#txtInput").val();
-  var txtInputVal = $("#txtInput").val();
-  var arrBin = [];
-
   $("#btnCheck").click( function(){
-    var txtInputValNew = txtInputVal / 2;
-    var getRest = ~~(txtInputVal / 2);
-    alert(txtInputVal);
-    while(txtInputVal > 2){
-      if(txtInputValNew > 2){
-        txtInputValNew / 2;
-        getRest;
-        arrBin.push(getRest);
-      } else if (txtInputValNew == 2){
-        getRest;
-        arrBin.push(getRest, txtInputValNew);
-      };
-    };
-    $("#result").html(arrBin.reverse());
-  });
 
+    var txtInputVal = $("#txtInput").val();
+    var txtInputValNew = txtInputVal;
+    var arrBin = [];
+
+    while(txtInputValNew >= 2){
+      var getRest = txtInputValNew % 2;
+      Math.floor(txtInputVal / 2);
+      arrBin.push(getRest);
+      txtInputValNew = Math.floor(txtInputValNew / 2);
+    };
+
+    arrBin.push(1);
+    result = arrBin.reverse().join('');
+
+    $("#result").html(result);
+  });
 });
