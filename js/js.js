@@ -3,7 +3,7 @@ $(document).ready(function(){
   var txtInputVal = $("#txtInput").val();
   var arrBin = [];
 
-  $("#btnInput").click( function(){
+  $("#btnCheck").click( function(){
     var txtInputValNew = txtInputVal / 2;
     var getRest = ~~(txtInputVal / 2);
     alert(txtInputVal);
