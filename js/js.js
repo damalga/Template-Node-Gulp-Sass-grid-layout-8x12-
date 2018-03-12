@@ -13,7 +13,7 @@ $(document).ready(function(){
     };
 
     arrBin.push(1);
-    result = arrBin.reverse().join('');
+    result = arrBin.reverse();
 
     $("#result").html(result);
   });
