@@ -6,7 +6,7 @@ var autoprefixer = require('gulp-autoprefixer');
 gulp.task('sass', function(){
   gulp.src('./sass/base.sass')
     .pipe(sass({
-      outputStyle: 'compressed',
+      outputStyle: 'expanded',
     }))
     .pipe(autoprefixer({
       versions: ['last 2 browsers']
@@ -16,4 +16,5 @@ gulp.task('sass', function(){
 
 gulp.task('default', function(){
   gulp.watch('./sass/*.sass', ['sass']);
+  gulp.watch('./sass/*.scss', ['sass']);
 });

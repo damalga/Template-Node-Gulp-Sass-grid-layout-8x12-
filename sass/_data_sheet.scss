@@ -1,0 +1,54 @@
+.content-data-sheet {
+	width: rem($container-large-desktop);
+	margin: 0 auto;
+	margin-top: rem(64);
+	.title-data-sheet {
+		font-size: rem(30);
+		color: $blueDark;
+		text-align: center;
+		line-height: 0.8;
+		margin-bottom: rem(21);
+	}
+	.text-data-sheet {
+		font-size: rem(16);
+		display: block;
+		color: #000;
+		line-height: 1.5;
+		text-align: center;
+		margin-bottom: rem(30);
+	}
+
+	.content-table {
+		width: 100%;
+		border: rem(2) solid $grayDark;
+    margin-bottom: rem(30);
+		.title-table {
+      background: $grayLight;
+      padding: rem(8);
+      border-bottom: rem(2) solid $grayDark;
+      .title {
+        font-size: rem(20);
+        margin-bottom: 0;
+        font-weight: 700;
+			}
+    }
+    .table-data-sheet {
+      margin: 0;
+      border-bottom: rem(2) dotted $grayDark;
+      &:last-child{
+        border-bottom: 0;
+      }
+      .item-data {
+        padding: rem(16) rem(8);
+        font-weight: 700;
+        .name-data{
+          color: $grayDark;
+        }
+        .description-data {
+          color: $blueDark;
+        }
+      }
+    }
+	}
+
+}
