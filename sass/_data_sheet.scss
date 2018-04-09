@@ -2,6 +2,9 @@
 	width: rem($container-large-desktop);
 	margin: 0 auto;
 	margin-top: rem(64);
+	@media only screen and (max-width: 1230px) {
+    width: 100%;
+	}
 	.title-data-sheet {
 		font-size: rem(30);
 		color: $blueDark;

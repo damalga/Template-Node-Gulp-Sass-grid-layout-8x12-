@@ -40,6 +40,12 @@ table {
   margin-top: 4rem;
 }
 
+@media only screen and (max-width: 1230px) {
+  .content-data-sheet {
+    width: 100%;
+  }
+}
+
 .content-data-sheet .title-data-sheet {
   font-size: 1.875rem;
   color: #021c69;
