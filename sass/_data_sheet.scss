@@ -2,9 +2,6 @@
 	width: rem($container-large-desktop);
 	margin: 0 auto;
 	margin-top: rem(64);
-	@media only screen and (max-width: 1230px) {
-    width: 100%;
-	}
 	.title-data-sheet {
 		font-size: rem(30);
 		color: $blueDark;
@@ -19,54 +16,95 @@
 		text-align: center;
 		margin-bottom: rem(30);
 	}
-
 	.content-table {
 		width: 100%;
 		border: rem(2) solid $grayDark;
     margin-bottom: rem(30);
 		.title-table {
       background: $grayLight;
-      padding: rem(8);
+			height: 50px;
+      padding: rem(8) rem(16);
       border-bottom: rem(2) solid $grayDark;
+			.title,
+			.ico {
+				position: relative;
+				top: rem(5);
+			}
+			.ico {
+				color: $blueDark;
+				padding: rem(4);
+				float: right;
+				display: none;
+			}
       .title {
-        font-size: rem(20);
+        font-size: 18px;
         margin-bottom: 0;
         font-weight: 700;
 				display: inline-block;
 			}
-			.arrow-down, .arrow-up{
-				padding: rem(4);
-				float: right;
-				cursor: pointer;
-				@media only screen and (max-width: 480px) {
-			    display: inline-block;
-				}
-			}
-			.arrow-down,
-			.arrow-up {
-				display: none;
-			}
     }
     .table-data-sheet {
       margin: 0;
-      border-bottom: rem(2) dotted $grayDark;
       &:last-child{
         border-bottom: 0;
       }
       .item-data {
-        padding: rem(16) rem(8);
+				font-size: 14px;
         font-weight: 700;
+				padding: rem(16);
+				&:nth-child(-n+3){
+					border-bottom: rem(2) dotted $grayDark;
+				}
         .name-data{
-          color: $grayDark;
+          color: #333;
         }
         .description-data {
           color: $blueDark;
+					margin-left: rem(16);
         }
       }
-			@media only screen and (max-width: 480px) {
-				display: none;
-			}
     }
 	}
+}
 
+/* Media Queries */
+
+@media only screen and (max-width: 1230px) {
+	.content-data-sheet{
+		width: 100%;
+	}
+}
+@media (max-width:768px){
+	.content-data-sheet {
+		.content-table{
+			border: 0;
+			box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.27);
+			.title-table{
+				background: #f9f9f9;
+				border-bottom: 0;
+				.title{
+					color: $blueDark;
+				}
+				.arrow-down{
+					display: block;
+				}
+			}
+			.table-data-sheet {
+				display: none;
+				.item-data{
+					border-bottom: 1px dotted #d8d8d8 !important;
+					&:first-child{
+						border-top: 1px solid #d8d8d8;
+					}
+					&:last-child{
+						border-bottom: 0;
+					}
+					.name-data{}
+					.description-data{
+						float: right;
+					}
+				}
+			}
+		}
+	}
 }
