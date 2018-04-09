@@ -80,7 +80,7 @@ ul li {
   display: block;
   overflow: hidden;
   position: relative;
-  background-image: url("../img/vector-ships.png") 0 0;
+  background-image: url("../img/vector-ships.png");
 }
 
 #sprite .sprite-change {
