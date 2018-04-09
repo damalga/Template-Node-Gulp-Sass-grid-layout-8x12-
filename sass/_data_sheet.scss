@@ -38,13 +38,11 @@
 				padding: rem(4);
 				float: right;
 				cursor: pointer;
-			}
-			.arrow-down {
-				display: none;
 				@media only screen and (max-width: 480px) {
 			    display: inline-block;
 				}
 			}
+			.arrow-down,
 			.arrow-up {
 				display: none;
 			}
