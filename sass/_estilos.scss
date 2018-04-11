@@ -1,0 +1,21 @@
+/* Pixels to REM -- Ejemplo: font-size: rem(16) */
+$baseFontSize: 16px;
+$container-large-desktop: 1170px;
+@function rem($pixels, $context: $baseFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
+}
+
+// Colors
+$blueDark:    #021c69;
+$blueLight:   #0dc8bd;
+$grayLight:   #ecedee;
+$grayDark:    #aaa;
+// Obtener colores reales.
+$bg-boat:     #333;
+$bg-banner:   #f8f8f8;

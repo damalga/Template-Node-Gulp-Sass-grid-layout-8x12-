@@ -1,0 +1,379 @@
+.content-detail{
+	.detail{
+		display: inline-block;
+		position: relative;
+		width: 100%;
+		.tour-virtual{
+			display: inline-block;
+			width: 60%;
+			height: rem(400);
+			position: relative;
+	    	.iframe-360{
+	    		position: relative;
+	    		width: 100%;
+	    		height: 100%;
+	    	}
+	    	.seleccion-espacios{
+	   			position: absolute;
+	  			bottom: 0;
+	  	 		right: rem(20);
+	   			margin: 0 0 rem(30) rem(30);
+	   			a, a:hover{
+	   				text-decoration: none;
+	   			}
+	   			img{
+	   				width: rem(100);
+	    			height: auto;
+	    			position: relative;
+	   				margin-left: rem(5);
+	    			cursor: pointer;
+	   			}
+	   			h1{
+	   				color: #fff;
+	    			font-size: rem(20);
+	   			}
+	   		}
+		}
+		img {
+			width: 60%;
+		}
+  	.data-detail{
+  		   width: 35%;
+		    display: inline-block;
+		    margin: rem(25);
+		    position: absolute;
+		    top: rem(25);
+		    right: 0;
+  		.title{
+  			font-size: rem(35);
+  			color: $blueDark;
+  			font-weight: bold;
+  		}
+  		.subtitle{
+  			font-size: rem(30);
+  			line-height: 1;
+  			color: $blueDark;
+  			margin-bottom: rem(15);
+  		}
+  		.description{
+  			font-size: rem(16);
+  		}
+  		.data-feature{
+				padding-top: rem(20);
+				.interest-title{
+					text-transform: uppercase;
+					color: $blueDark;
+					font-size: rem(20);
+					margin-bottom: rem(15);
+					border-left: rem(1) solid $grayLight;
+				}
+				.interest-list {
+					display: inline-block;
+	    			.interest-li {
+						display: list-item;
+						list-style: inside;
+						color: $blueLight;
+						font-size: rem(20);
+						width: 100%;
+						& span {
+	    					font-size: rem(14);
+	    					color: $blueDark;
+	    			}
+					}
+				}
+			}
+  	}
+	}
+	
+	.info {
+		background-color: $bg-boat;
+		.feature {
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+  		.col-5 {
+  			display: inline-block;
+		    padding-top: rem(15);
+		    padding-bottom: rem(15);
+		    border-right: rem(1) solid $grayLight;
+		    width: 19%;
+		    &:last-child{
+		    	border-right: none;
+		    }
+		    .ico {
+			    font-size: rem(30);
+			    color: $blueLight;
+			    margin: rem(15) 0;
+				}
+		    .text {
+			    display: inline-block;
+			    color: $blueDark;
+			    text-align: left;
+			    width: 70%;
+			    .feature-title {
+			    	font-weight: bold;
+			    	color: $blueDark;
+			    	width: 100%;
+			    	display: inline-block;
+				  }
+				}
+  		}
+		}
+	}
+}
+
+.content-banner {
+	width: rem($container-large-desktop);
+	background-color: $bg-banner;
+	.ctn-banner {
+		width: 80%;
+		margin: 0 auto;
+		padding: rem(40) 0;
+		.title {
+			font-size: rem(24);
+	    text-align: center;
+	    color: $blueDark;
+	    margin-bottom: rem(16);
+		}
+		.subtitle {
+			font-size: rem(14);
+			font-weight: 600;
+			font-style: initial;
+			text-align: center;
+			display: block;
+			margin: 0 auto;
+			margin-bottom: rem(40);
+			width: rem(679);
+		}
+		.news {
+			height: rem(250);
+			position: relative;
+			background-color: #ffffff;
+  		box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.29);
+			margin-bottom: rem(30);
+			.owl-dots {
+				position: relative;
+				bottom: rem(40);
+				text-align: center;
+				.owl-dot{
+					background: $grayLight;
+					width: rem(30);
+					height: rem(5);
+					.active{
+						background: $blueLight;
+					}
+				}
+	    }
+			.item{
+				height: 100%;
+				img{
+					max-width: 100%;
+				}
+			}
+			.content-img, .tour-virtual{
+				display: inline-block;
+				position: relative;
+	    	width: 55%;
+	    	height: rem(250);
+			}
+			.content-img{
+				overflow: hidden;
+				img{
+					display: inline-block;
+					height: 100%;
+				}
+			}
+			.tour-virtual{
+	    	.iframe-360 {
+	    		position: relative;
+	    		width: 100%;
+	    		height: 100%;
+	    	}
+	    	.seleccion-espacios {
+	   			position: absolute;
+	  			bottom: 0;
+	  	 		right: rem(20);
+	   			margin: 0 0 rem(30) rem(30);
+	   			a, a:hover {
+	   				text-decoration: none;
+	   			}
+	   			img {
+	   				width: rem(100);
+	    			height: auto;
+	    			position: relative;
+	   				margin-left: rem(5);
+	    			cursor: pointer;
+	   			}
+	   			h1 {
+	   				color: #fff;
+	    			font-size: rem(20);
+	   			}
+	   		}
+			}
+			.banner {
+				background: #fff;
+				width: 40%;
+		    display: inline-block;
+		    margin: rem(16) rem(28);
+		    position: absolute;
+		    top: rem(16);
+		    right: 0;
+		    .title-new {
+		    	font-size: rem(18);
+					font-weight: 600;
+			    color: $blueDark;
+			    margin-bottom: rem(12);
+		    }
+		    .subtitle-new {
+					font-size: rem(14);
+					font-style: initial;
+					font-weight: 500;
+		    	display: block;
+		    	margin-bottom: rem(16);
+		    }
+				.description-new,
+				.btn-new{
+					font-size: rem(16);
+					display: block;
+					position: relative;
+					top: rem(8);
+				}
+		    .description-new {
+		    	margin-bottom: rem(40);
+		    }
+		    .btn-new {
+			    background: $blueLight;
+			    color: #fff;
+					width: rem(240);
+					padding: rem(12) 0;
+			    text-align: center;
+					position: relative;
+					top: rem(26);
+		    }
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1230px) {
+	.content-banner{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.content-detail {
+		.detail {
+			.tour-virtual {
+				width: 100%;
+				height: rem(300);
+				.seleccion-espacios {
+		   			margin: 0 0 rem(15) rem(15);
+		   			img {
+		   				width: rem(85);
+		   			}
+		   		}
+			}
+			img {
+				width: 100%;
+			}
+			.data-detail {
+				width: 89%;
+				position: relative;
+				top: 0;
+				right: 0;
+				margin: rem(20);
+				.title {
+					font-size: rem(22);
+					font-weight: normal;
+					margin-bottom: rem(5);
+				}
+				.subtitle {
+					font-size: rem(16);
+					font-weight: bold;
+					color: $blueLight;
+				}
+				.description {
+					font-size: rem(14);
+				}
+				.data-feature {
+					.interest-list {
+						.mobile-li {
+							font-size: rem(14);
+						}
+					}
+				}
+			}
+		}
+		.info {
+  		.feature {
+  			.col-5 {
+  				width: 100%;
+  				border-bottom: rem(1) solid $grayLight;
+  				border-left: rem(1) solid $grayLight;
+  				&:last-child {
+  					border-bottom: none;
+  				}
+  				.text {
+  					width: 80%;
+  					vertical-align: super;
+  					.feature-title {
+  						margin-right: rem(3);
+  						display: initial;
+  					}
+  				}
+  				.ico {
+  					margin-left: rem(15);
+  				}
+  			}
+  		}
+  	}
+	}
+	.content-banner {
+		.ctn-banner {
+			width: 90%;
+			padding-top: rem(30);
+			padding-bottom: rem(30);
+			.title {
+				font-size: rem(22);
+				margin-bottom: rem(12);
+			}
+			.subtitle {
+				font-size: rem(14);
+				width: 100%;
+				padding-bottom: rem(20);
+			}
+			.news {
+				.tour-virtual {
+					width: 100%;
+					.seleccion-espacios {
+		   			margin: 0 0 rem(15) rem(15);
+		   			img {
+		   				width: rem(85);
+		   			}
+		   		}
+				}
+				.banner {
+					width: 85%;
+					margin: rem(25);
+					position: relative;
+					top: 0;
+					right: 0;
+					.title-new {
+						font-weight: bold;
+						font-size: rem(16);
+					}
+					.subtitle-new {
+						font-size: rem(14);
+					}
+					.description-new {
+						font-size: rem(14);
+					}
+					.btn-new {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
