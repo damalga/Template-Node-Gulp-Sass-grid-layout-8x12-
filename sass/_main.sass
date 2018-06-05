@@ -1,0 +1,58 @@
+// HTML
+html
+  // width
+  ::-webkit-scrollbar
+      width: 15px
+  // Track
+  ::-webkit-scrollbar-track
+      background: $white
+  // Handle
+  ::-webkit-scrollbar-thumb
+      background: $yellow
+  // Handle on hover
+  ::-webkit-scrollbar-thumb:hover
+      background: $black
+  // cursor
+  cursor: crosshair
+
+// BODY
+body
+  background: $lighter-gray
+
+  // MAIN
+  main
+
+    // SECTION
+    section
+      margin: 15px 0
+
+      // TITLE & TEXT
+      .title, .text
+        margin-left: 8rem
+
+      // TITLE
+      .title
+        color: $black
+
+        // TEXT
+      .text
+        width: 512px
+        background: #ff0
+        color: $black
+        display: inline-block
+        position: relative
+        left: 4rem
+        p
+          margin: 0
+          padding: 2rem
+          line-height: 1.6em
+
+      // TITLE
+      .images
+        display: inline-block
+        .image-1
+          width: 320px
+          height: 320px
+          overflow: hidden
+          img
+            object-fit: cover
