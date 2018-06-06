@@ -25,34 +25,42 @@ body
     // SECTION
     section
       margin: 15px 0
+      overflow: hidden
 
-      // TITLE & TEXT
-      .title, .text
-        margin-left: 8rem
+      // TITLE, TEXT & IMAGES
+      .title, .text, .images
+
+      // TEXT & IMAGES
+      .text, .images
+        float: left
 
       // TITLE
       .title
         color: $black
+        z-index: 10
 
         // TEXT
       .text
-        width: 512px
-        background: #ff0
-        color: $black
+        width: 600px
         display: inline-block
-        position: relative
-        left: 4rem
-        p
-          margin: 0
+        z-index: 8
+        .text-container
+          background: $yellow
+          color: $black
           padding: 2rem
-          line-height: 1.6em
+          h3
+            margin-bottom: 2rem
+          p
+            margin: 0
+            line-height: 1.6em
 
       // TITLE
       .images
-        display: inline-block
+        [class^="image-"]
+          display: inline-flex
         .image-1
-          width: 320px
-          height: 320px
-          overflow: hidden
-          img
-            object-fit: cover
+          z-index: 6
+        .image-2
+          z-index: 4
+        .image-3
+          z-index: 2
