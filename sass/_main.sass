@@ -2,7 +2,7 @@
 html
   // width
   ::-webkit-scrollbar
-      width: 15px
+      width: 10px
   // Track
   ::-webkit-scrollbar-track
       background: $white
@@ -12,55 +12,49 @@ html
   // Handle on hover
   ::-webkit-scrollbar-thumb:hover
       background: $black
-  // cursor
-  cursor: crosshair
 
 // BODY
 body
   background: $lighter-gray
+  width: 100%
+  padding: 20px
 
   // MAIN
   main
 
     // SECTION
     section
-      margin: 15px 0
       overflow: hidden
-
-      // TITLE, TEXT & IMAGES
-      .title, .text, .images
-
-      // TEXT & IMAGES
-      .text, .images
-        float: left
+      &:last-child
+        margin-bottom: 20px
 
       // TITLE
       .title
+        padding: 2rem
+        h2
         color: $black
-        z-index: 10
 
-        // TEXT
+      // TEXT & IMAGES
+      .text, .images
+        width: calc(50vw - 10px)
+        padding: 2rem
+        display: table-cell
+
+      // TEXT
       .text
-        width: 600px
-        display: inline-block
-        z-index: 8
+        border: 4px solid $black
+        overflow: hidden
         .text-container
-          background: $yellow
           color: $black
+          width: 512px
           padding: 2rem
+          float: right
           h3
             margin-bottom: 2rem
           p
             margin: 0
             line-height: 1.6em
 
-      // TITLE
+      // IMAGES
       .images
-        [class^="image-"]
-          display: inline-flex
-        .image-1
-          z-index: 6
-        .image-2
-          z-index: 4
-        .image-3
-          z-index: 2
+        background: $yellow
