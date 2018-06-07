@@ -2,7 +2,7 @@
 html
   // width
   ::-webkit-scrollbar
-      width: 10px
+      width: 12px
   // Track
   ::-webkit-scrollbar-track
       background: $black
@@ -24,6 +24,7 @@ body
 
     // SECTION
     section
+      height: 76vh
       &:last-child
         margin-bottom: 40px
 
@@ -33,11 +34,12 @@ body
         padding: 2rem
         display: inline-block
         h2
-        color: $black
+          color: $black
 
       // TEXT & IMAGES
       .text, .images
-        width: calc(50vw - 10px)
+        width: calc(50vw - 20px)
+        height: 100%
         padding: 2rem
         display: table-cell
 
@@ -64,7 +66,6 @@ body
       &:nth-child(odd)
         .text-container
           float: right
-
 
       // IMAGES
       .images
