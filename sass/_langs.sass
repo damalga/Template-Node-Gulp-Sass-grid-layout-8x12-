@@ -1,9 +1,15 @@
 .langs
-  position: absolute
-  bottom: 60px
+  position: fixed
+  bottom: 200px
   right: 0
-  div
+  .es, .en, .fr, .it
     background: $black
     color: $white
     padding: 20px
     cursor: pointer
+    transition: all .4s ease
+    &:hover
+      background: $magenta
+      color: $black
+      width: 128px
+      font-weight: 700

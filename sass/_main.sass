@@ -5,13 +5,13 @@ html
       width: 10px
   // Track
   ::-webkit-scrollbar-track
-      background: $white
+      background: $black
   // Handle
   ::-webkit-scrollbar-thumb
-      background: $yellow
+      background: $blue
   // Handle on hover
   ::-webkit-scrollbar-thumb:hover
-      background: $black
+      background: $magenta
 
 // BODY
 body
@@ -24,13 +24,14 @@ body
 
     // SECTION
     section
-      overflow: hidden
       &:last-child
-        margin-bottom: 20px
+        margin-bottom: 40px
 
       // TITLE
       .title
+        width: 50%
         padding: 2rem
+        display: inline-block
         h2
         color: $black
 
@@ -42,19 +43,33 @@ body
 
       // TEXT
       .text
-        border: 4px solid $black
+        border: 12px solid $black
         overflow: hidden
         .text-container
           color: $black
-          width: 512px
+          width: 60%
           padding: 2rem
-          float: right
           h3
             margin-bottom: 2rem
+            font-weight: 700
           p
             margin: 0
             line-height: 1.6em
 
+    // SECTION EVEN CHANGES
+    section
+      &:nth-child(even)
+        .text-container
+          float: left
+      &:nth-child(odd)
+        .text-container
+          float: right
+
+
       // IMAGES
       .images
-        background: $yellow
+        background: $blue
+        vertical-align: bottom
+        .image
+          background: $magenta
+          height: 200px
