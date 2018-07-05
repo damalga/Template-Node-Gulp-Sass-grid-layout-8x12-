@@ -1,0 +1,235 @@
+$webkit: '-webkit';
+$moz: '-moz';
+$ms: '-ms';
+$o: '-o';
+
+$filter: 'filter';
+
+//Placeholder
+@mixin placeholder-color($color, $font, $style, $size, $padding) {
+	&::#{$webkit}-input-placeholder {
+		@if ($font != n) {
+			font-family: $font;
+		}
+		@if ($style != n) {
+			font-style: $style;
+		}
+		@if ($size != n) {
+			font-size: $size;
+		}
+		@if ($color != n) {
+			color: $color;
+		}
+		@if ($padding != n) {
+			padding: $padding;
+		}
+	}
+	&:#{$moz}-placeholder           {
+		@if ($font != n) {
+			font-family: $font;
+		}
+		@if ($style != n) {
+			font-style: $style;
+		}
+		@if ($size != n) {
+			font-size: $size;
+		}
+		opacity: 1;
+		@if ($color != n) {
+			color: $color;
+		}
+		@if ($padding != n) {
+			padding: $padding;
+		}
+	}
+	&::#{$moz}-placeholder          {
+		@if ($font != n) {
+			font-family: $font;
+		}
+		@if ($style != n) {
+			font-style: $style;
+		}
+		@if ($size != n) {
+			font-size: $size;
+		}
+		opacity: 1;
+		@if ($color != n) {
+			color: $color;
+		}
+		@if ($padding != n) {
+			padding: $padding;
+		}
+	}
+	&:#{$ms}-input-placeholder      {
+		@if ($font != n) {
+			font-family: $font;
+		}
+		@if ($style != n) {
+			font-style: $style;
+		}
+		@if ($size != n) {
+			font-size: $size;
+		}
+		@if ($color != n) {
+			color: $color;
+		}
+		@if ($padding != n) {
+			padding: $padding;
+		}
+	}
+}
+//user select
+@mixin user-select($selection) {
+	#{$webkit}-user-select: $selection;
+	#{$moz}-user-select: $selection;
+	#{$ms}-user-select: $selection;
+	user-select: $selection;
+}
+//filter
+@mixin filter($valor) {
+	filter: alpha(opacity = $valor);
+}
+//flex
+@mixin flex-align-wrap($align, $wrap) {
+	display: flex;
+	display: #{$ms}-flexbox;
+	display: #{$webkit}-flex;
+	#{$ms}-flex-align: $align;
+	#{$webkit}-align-items: $align;
+	#{$webkit}-box-align: $align;
+	align-items: $align;
+	@if ($wrap != n) {
+		flex-wrap: wrap;
+	}
+}
+//hyphens
+@mixin hyphens($valor) {
+	#{$moz}-hyphens: $valor;
+	#{$webkit}-hyphens: $valor;
+	#{$ms}-hyphens: $valor;
+	#{$o}-hyphens: $valor;
+	hyphens: $valor;
+}
+// Resize anything
+@mixin resizable($direction) {
+	resize: $direction; // Options: horizontal, vertical, both
+	overflow: auto; // Safari fix
+}
+//Columns
+@mixin columns($count, $gap, $rule) {
+	@if ($count != n) {
+		#{$webkit}-column-count: $count;
+		#{$moz}-column-count: $count;
+		#{$ms}-column-count: $count;
+		column-count: $count;
+	}
+	@if ($gap != n) {
+		#{$webkit}-column-gap: $gap;
+		#{$moz}-column-gap: $gap;
+		#{$ms}-column-gap: $gap;
+		column-gap: $gap;
+	}
+	@if ($rule != n) {
+		#{$webkit}-column-rule: $rule;
+		#{$moz}-column-rule: $rule;
+		#{$ms}-column-rule: $rule;
+		column-rule: $rule;
+	}
+}
+// Outline
+@mixin outline($out, $off) {
+	@if ($out != n) {
+		outline: $out;
+	}
+	@if ($off != n) {
+		outline-offset: $off;
+	}
+}
+// appearance
+@mixin appearance($valor) {
+	#{$webkit}-appearance: $valor;
+	#{$moz}-appearance: $valor;
+	#{$ms}-appearance: $valor;
+	appearance: $valor;
+}
+
+// Transitions
+@mixin transition($transition...) {
+	#{$webkit}-transition: $transition;
+	#{$moz}-transition: $transition;
+	#{$o}-transition: $transition;
+	transition: $transition;
+}
+// Transformations
+@mixin rotate($degrees) {
+	#{$webkit}-transform: rotate($degrees);
+	#{$moz}-transform: rotate($degrees);
+	#{$ms}-transform: rotate($degrees);
+	#{$o}-transform: rotate($degrees);
+	transform: rotate($degrees);
+}
+@mixin translate($x, $y) {
+	#{$webkit}-transform: translate($x, $y);
+	#{$moz}-transform: translate($x, $y);
+	#{$ms}-transform: translate($x, $y);
+	#{$o}-transform: translate($x, $y);
+	transform: translate($x, $y);
+}
+//Filter css3
+@mixin filter-brightness($value) {
+	#{$webkit}-filter: brightness($value);
+	#{$moz}-filter: brightness($value);
+	#{$ms}-filter: brightness($value);
+	#{$o}-filter: brightness($value);
+	#{$filter}: brightness($value);
+}
+@mixin filter-hue-rotate($value) {
+	#{$webkit}-filter: hue-rotate($value);
+	#{$moz}-filter: hue-rotate($value);
+	#{$ms}-filter: hue-rotate($value);
+	#{$o}-filter: hue-rotate($value);
+	#{$filter}: hue-rotate($value);
+}
+
+//filter IE
+@mixin filter-ie($values) {
+	#{$filter}: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{ie-hex-str($values)}', endColorstr='#{ie-hex-str($values)}', GradientType=0 );
+}
+
+
+//Flex group
+@mixin flex-group($direction, $wrap, $justify, $content, $items) {
+	display: #{$ms}-flexbox;
+	display: #{$webkit}-flex;
+	display: flex;
+	#{$webkit}-flex-direction: $direction;
+	#{$ms}-flex-direction: $direction;
+	flex-direction: $direction;
+	#{$webkit}-flex-wrap: $wrap;
+	#{$ms}-flex-wrap: $wrap;
+	flex-wrap: $wrap;
+	#{$webkit}-justify-content: $justify;
+	#{$ms}-flex-pack: justify;
+	justify-content: $justify;
+	#{$webkit}-align-content: $content;
+	#{$ms}-flex-line-pack: $content;
+	align-content: $content;
+	#{$webkit}-align-items: $items;
+	#{$ms}-flex-align: $items;
+	align-items: $items;
+}
+@mixin flex-item($order, $flex, $align, $grow) {
+	#{$webkit}-order: $order;
+	#{$ms}-flex-order: $order;
+	order: $order;
+	#{$webkit}-flex: $flex;
+	#{$ms}-flex: $flex;
+	flex: $flex;
+	#{$webkit}-align-self: $align;
+	#{$ms}-flex-item-align: $align;
+	align-self: $align;
+	flex-grow: $grow;
+}
+@mixin flex-item-width($width) {
+	flex-basis: $width;
+}

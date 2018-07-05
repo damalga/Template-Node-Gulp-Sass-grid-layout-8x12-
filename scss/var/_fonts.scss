@@ -1,0 +1,175 @@
+// FONT-FACES
+// franklin-gothic
+@font-face{
+	font-family: 'ITCFranklinGothicCondensedBook';
+	src: url('var/fonts/ITCFranklinGothicCondensedBook.eot?#iefix');
+	src: url('var/fonts/ITCFranklinGothicCondensedBook.eot?#iefix') format('eot'),
+	url('var/fonts/ITCFranklinGothicCondensedBook.woff') format('woff'),
+	url('var/fonts/ITCFranklinGothicCondensedBook.ttf') format('truetype'),
+	url('var/fonts/ITCFranklinGothicCondensedBook.svg#ITCFranklinGothicCondensedBook') format('svg');
+}
+@font-face{
+	font-family: 'ITCFranklinGothicCondensedDemi';
+	src: url('var/fonts/ITCFranklinGothicCondensedDemi.eot?#iefix');
+	src: url('var/fonts/ITCFranklinGothicCondensedDemi.eot?#iefix') format('eot'),
+	url('var/fonts/ITCFranklinGothicCondensedDemi.woff') format('woff'),
+	url('var/fonts/ITCFranklinGothicCondensedDemi.ttf') format('truetype'),
+	url('var/fonts/ITCFranklinGothicCondensedDemi.svg#ITCFranklinGothicCondensedDemi') format('svg');
+}
+@font-face{
+	font-family: 'Conv_ITCFranklinGothicStd-MdCd';
+	src: url('var/fonts/Conv_ITCFranklinGothicStd-MdCd.eot?#iefix');
+	src: url('var/fonts/Conv_ITCFranklinGothicStd-MdCd.eot?#iefix') format('eot'),
+	url('var/fonts/Conv_ITCFranklinGothicStd-MdCd.woff') format('woff'),
+	url('var/fonts/Conv_ITCFranklinGothicStd-MdCd.ttf') format('truetype'),
+	url('var/fonts/Conv_ITCFranklinGothicStd-MdCd.svg#Conv_ITCFranklinGothicStd-MdCd') format('svg');
+}
+
+// publico
+@font-face{
+	font-family: 'PublicoHeadline-Bold';
+	src: url('var/fonts/Publico/PublicoHeadline-Bold-Web.eot?#iefix');
+	src: url('var/fonts/Publico/PublicoHeadline-Bold-Web.eot?#iefix') format('eot'),
+	url('var/fonts/Publico/PublicoHeadline-Bold-Web.woff') format('woff'),
+	url('var/fonts/Publico/PublicoHeadline-Bold-Web.ttf') format('truetype'),
+	url('var/fonts/Publico/PublicoHeadline-Bold-Web.svg#PublicoHeadline-Bold-Web') format('svg');
+}
+
+// source-sans-pro
+@font-face {
+	font-family: 'SourcesSansPro';
+	src: url('var/fonts/SOURCES_SANS_PRO_FONT/SourceSansPro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SourcesSansPro';
+	src: url('var/fonts/SOURCES_SANS_PRO_FONT/SourceSansPro-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'SourcesSansPro';
+	src: url('var/fonts/SOURCES_SANS_PRO_FONT/SourceSansPro-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SourcesSansPro';
+	src: url('var/fonts/SOURCES_SANS_PRO_FONT/SourceSansPro-BlackItalic.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'SourcesSansPro';
+	src: url('var/fonts/SOURCES_SANS_PRO_FONT/SourceSansPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SourcesSansPro';
+	src: url('var/fonts/SOURCES_SANS_PRO_FONT/SourceSansPro-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'SourcesSansPro';
+	src: url('var/fonts/SOURCES_SANS_PRO_FONT/SourceSansPro-ExtraLight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SourcesSansPro';
+	src: url('var/fonts/SOURCES_SANS_PRO_FONT/SourceSansPro-ExtraLightItalic.ttf') format('truetype');
+	font-weight: 200;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'SourcesSansPro';
+	src: url('var/fonts/SOURCES_SANS_PRO_FONT/SourceSansPro-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SourcesSansPro';
+	src: url('var/fonts/SOURCES_SANS_PRO_FONT/SourceSansPro-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'SourcesSansPro';
+	src: url('var/fonts/SOURCES_SANS_PRO_FONT/SourceSansPro-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SourcesSansPro';
+	src: url('var/fonts/SOURCES_SANS_PRO_FONT/SourceSansPro-SemiBoldItalic.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
+}
+
+// VARS
+$book: 'ITCFranklinGothicCondensedBook', 'Arial', sans-serif;
+$demi: 'ITCFranklinGothicCondensedDemi', 'Arial', sans-serif;
+$medium: 'Conv_ITCFranklinGothicStd-MdCd', 'Arial', sans-serif;
+
+$headline: 'PublicoHeadline-Bold', 'Arial', sans-serif;
+$sourcesans: 'SourcesSansPro', 'Arial', sans-serif;
+
+// HEADINGS
+h1, h2, h3, h4, h5, h6{
+  font-family: $headline;
+  margin: 0;
+}
+h1, h2{
+  font-weight: 200;
+  display: block;
+}
+h1{
+  font-size: 5.6em;
+}
+h2{
+  font-size: 4.8em;
+}
+h3, h4{
+  font-weight: 400;
+  display: inline-block;
+}
+h3{
+  font-size: 3.6em;
+}
+h4{
+  font-size: 2.8em;
+}
+h5, h6{
+  font-weight: 700;
+  display: inline;
+}
+h5{
+  font-size: 2em;
+}
+h6{
+  font-size: 1.2em;
+}
+
+// VARIOUS
+p{
+  font-size: .9em;
+  font-weight: 400;
+}
+span{
+  font-size: .8em;
+  font-weight: 400;
+}
+ul{
+  li{
+    font-size: .8em;
+    a{
+      text-decoration: none;
+    }
+  }
+}
+i{
+  font-family: FontAwesome;
+}

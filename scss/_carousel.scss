@@ -1,0 +1,123 @@
+.owl-carousel{
+  .owl-stage-outer{
+    height: 512px;
+    margin: 0 auto;
+    .owl-stage{
+      .owl-item{
+        .item{
+          margin: 0;
+          img, .text{
+            padding: 0;
+          }
+          img{
+            height: 512px;
+          }
+          .text{
+            background: $turquoise-blog;
+            padding: 32px;
+            z-index: 400;
+            .title, .description, .button-axa-read-more{
+              color: $blue-axa;
+              display: block;
+            }
+            .title, .description{
+              margin-bottom: 24px;
+            }
+            .title{
+              font-family: $headline;
+              font-size: 36px;
+            }
+            .description{
+              font-family: $book;
+              font-size: 20px;
+            }
+            .button-axa-read-more{
+              width: 160px;
+              background: transparent;
+              padding: 8px 24px;
+              font-size: 16px;
+              font-weight: 600;
+              text-align: center;
+              border-radius: 0;
+              border: 2px solid $blue-axa;
+            }
+          }
+        }
+      }
+    }
+  }
+  .owl-dots.disabled{
+    display: block;
+  }
+  .owl-nav{
+    display: none;
+  }
+  .owl-dots{
+    width: 88%;
+    margin: 0 auto;
+    padding: 12px 0;
+    text-align: center;
+    .owl-dot{
+      background: $grey4;
+      margin: 0 12px;
+      padding: 4px !important;
+      border-radius: 50%;
+      position: relative;
+      bottom: 48px;
+    }
+    .owl-dot.active{
+      background: $blue-axa;
+    }
+  }
+
+  @media (max-width: 1200px){
+    .owl-stage-outer{
+      .owl-stage{
+        .owl-item{
+          .item{
+            .text{
+              .title{
+                font-size: 28px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 992px){
+    .owl-stage-outer{
+      height: auto;
+      .owl-stage{
+        .owl-item{
+          img, .text{
+            position: inherit;
+          }
+          .text{
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px){
+    .owl-stage-outer{
+      .owl-stage{
+        .owl-item{
+          .text{
+            .button-axa-read-more{
+              width: 140px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .owl-dots{
+      bottom: 36px;
+    }
+  }
+}
