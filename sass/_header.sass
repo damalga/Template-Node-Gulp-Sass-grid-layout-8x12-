@@ -1,37 +1,26 @@
 // HEADER
 header
-  width: 100%
-  height: 24vh
-  background: #000
-  color: $white
 
   // LOGO & NAV
-  .logo, nav
-    width: 50%
-    height: 100%
-    display: inline-block
-    line-height: 24vh
-    float: left
+  .upper-header, nav
 
   // LOGO
-  .logo
-    height: 100%
-    padding-left: 2rem
-    h1
-      color: $white
-      line-height: 22.8vh
+  .upper-header
+    height: 36px
 
   // NAV
   nav
-    padding-right: 2rem
+    width: 80%
+    margin: 0 auto
+    border-top: 2px solid #f4f4f4
     ul
-      margin: 0
-      float: right
+      padding: 8px
       li
-        display: inline
+        display: inline-flex
+        &:last-child
+          border-right: 2px solid #f4f4f4
         a
-          color: $white
-          padding: 1.6rem
+          padding: 16px
+          font-weight: 600
           &:hover
-            color: $magenta
             text-decoration: none
