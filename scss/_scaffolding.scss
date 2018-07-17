@@ -13,3 +13,25 @@
 .fixed{
   position: fixed;
 }
+
+// buttons
+a.white, a.blue, a.transp{
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 0;
+  border: 2px solid $blue-axa;
+}
+a.white, a.transp{
+  color: $blue-axa;
+}
+a.white{
+  background: $white;
+}
+a.blue{
+  background: $blue-axa;
+  color: $white;
+}
+a.transp{
+  background: transparent;
+}

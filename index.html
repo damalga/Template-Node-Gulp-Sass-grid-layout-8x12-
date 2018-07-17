@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <title>Axa - Mi Vida</title>
     <!--css-->
-    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-2.3.2/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-2.3.2/bootstrap-responsive.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/var/fonts/fonts-icons-blog.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
@@ -19,7 +21,7 @@
       <!--HEADER-->
       <header class="header">
         <div class="content clearfix">
-          <div class="content-left">
+          <div id="content-left" class="content-left">
             <h1 class="axa-logo">
               <a href="#" target="" title="" class="logo">
                 <img src="img/axa-logo.jpg" alt=""/>
@@ -27,22 +29,22 @@
             </h1>
           </div>
 
-          <div class="content-center">
+          <div id="content-center" class="content-center">
             <div class="main-title">
               <h2 class="title-sup">Mi Vida</h2>
               <h3 class="title">El blog de AXA</h3>
             </div>
           </div>
 
-          <div class="content-right">
+          <div id="content-right" class="content-right">
             <div class="icons-buttons">
               <div class="icons-container">
                 <i id="bars" class="fas fa-bars bars"></i>
                 <i id="times" class="fas fa-times times"></i>
               </div>
               <div class="btn-container">
-                <a id="btn-white" class="btn btn-border white" href="#" target="" title="">AXA.ES</a>
-                <a id="btn-blue" class="btn btn-border blue" href="#" target="" title="">CALCULA TU SEGURO</a>
+                <a id="btn-white" class="btn white" href="#" target="" title="">AXA.ES</a>
+                <a id="btn-blue" class="btn blue" href="#" target="" title="">CALCULA TU SEGURO</a>
               </div>
             </div>
           </div>
@@ -69,38 +71,45 @@
     <main>
 
       <!--SECTION-1-carousel-->
-      <section class="owl-carousel">
-        <div class="item row">
-          <div class="text col-lg-4">
-            <h4 class="title">Asegúrate de que tu pequeño negocio esté bien protegido</h4>
-            <span class="description">Tomar la decisión de poner en marcha un nuevo negocio supone asumir retos</span>
-            <a class="button-axa-read-more">LEER MÁS</a>
+      <section id="slider" class="slider">
+
+        <!--Slide-1-->
+        <div id="slide" class="slide row-fluid">
+          <div id="slide-text" class="slide-text span4">
+              <h4 class="title">Asegúrate de que tu pequeño negocio esté bien protegido</h4>
+              <span class="description">Tomar la decisión de poner en marcha un nuevo negocio supone asumir retos</span>
+              <a class="btn transp button-axa-read-more">LEER MÁS</a>
           </div>
-          <img class="img col-lg-8" src="img/flower-shop.jpg">
+          <img id="slide-img" class="slide-img span8" src="img/flower-shop.jpg">
         </div>
-        <div class="item row">
-          <div class="text col-lg-4">
-            <h4 class="title">Título 2</h4>
-            <span class="description">Descripción blablabla</span>
-            <a class="button-axa-read-more">LEER MÁS</a>
+
+        <!--Slide-2-->
+        <div id="slide" class="slide row-fluid">
+          <div id="slide-text" class="slide-text span4">
+              <h4 class="title">Título 2</h4>
+              <span class="description">Descripción blablabla</span>
+              <a class="btn transp button-axa-read-more">LEER MÁS</a>
           </div>
-          <img class="img col-lg-8" src="img/flower-shop.jpg">
+          <img id="slide-img" class="slide-img span8" src="img/flower-shop.jpg">
         </div>
-        <div class="item row">
-          <div class="text col-lg-4">
-            <h4 class="title">Título 3</h4>
-            <span class="description">Descripción blablabla</span>
-            <a class="button-axa-read-more">LEER MÁS</a>
+
+        <!--Slide-3-->
+        <div id="slide" class="slide row-fluid">
+          <div id="slide-text" class="slide-text span4">
+              <h4 class="title">Título 3</h4>
+              <span class="description">Descripción blablabla</span>
+              <a class="btn transp button-axa-read-more">LEER MÁS</a>
           </div>
-          <img class="img col-lg-8" src="img/flower-shop.jpg">
+          <img id="slide-img" class="slide-img span8" src="img/flower-shop.jpg">
         </div>
+
       </section>
 
       <!--SECTION-2-news-->
-      <section class="news row">
-        <div class="row">
+      <section class="news">
+        <div class="row-fluid">
           <!--New 1-->
-          <div class="new col-lg-4 col-sm-6 col-xs-12">
+          <div class="new span4">
             <img src="img/flower-shop.jpg">
             <span class="section">MI SALUD</span>
             <h4>Realiza un uso responsable de antibióticos</h4>
@@ -109,7 +118,7 @@
             <a href="#">LEER MÁS </a>
           </div>
           <!--New 2-->
-          <div class="new col-lg-4 col-sm-6 col-xs-12">
+          <div class="new span4">
             <img src="img/flower-shop.jpg">
             <span class="section">MI HOGAR</span>
             <h4>Seguro de Hogar</h4>
@@ -118,7 +127,7 @@
             <a href="#">LEER MÁS </a>
           </div>
           <!--New 3-->
-          <div class="new col-lg-4 col-sm-6 col-xs-12">
+          <div class="new span4">
             <img src="img/flower-shop.jpg">
             <span class="section">MIS VEHÍCULOS</span>
             <h4>Prevención en accidentes de tráfico</h4>
@@ -139,6 +148,7 @@
 
   <!--JS-->
   <script src="node_modules/jquery/dist/jquery.js"></script>
-  <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css">
+  <script src="node_modules/slick-carousel/slick/slick.js"></script>
   <script src="js/js.js"></script>
 </html>

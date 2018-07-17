@@ -153,18 +153,40 @@ h6{
   font-size: 1.2em;
 }
 
+// MAIN HEADINGS LEADING
+main{
+	h1{
+		line-height: 76px;
+	}
+	h2{
+		line-height: 64px;
+	}
+	h3{
+		line-height: 52px;
+	}
+	h4{
+		line-height: 40px;
+	}
+	h5{
+		line-height: 28px;
+	}
+	h6{
+		line-height: 16px;
+	}
+}
+
 // VARIOUS
 p{
-  font-size: .9em;
+  font-size: 1em;
   font-weight: 400;
 }
 span{
-  font-size: .8em;
+  font-size: 1em;
   font-weight: 400;
 }
 ul{
   li{
-    font-size: .8em;
+    font-size: 1em;
     a{
       text-decoration: none;
     }

@@ -1,15 +1,15 @@
 .container-fluid{
   padding-left: 0;
   padding-right: 0;
+  overflow-x: hidden;
   main{
     position: relative;
-    top: 144px;
+    top: 140px;
   }
 }
 @media (max-width: 1200px){
-  .container-fluid{    
+  .container-fluid{
     main{
-      top: 150;
     }
   }
 }

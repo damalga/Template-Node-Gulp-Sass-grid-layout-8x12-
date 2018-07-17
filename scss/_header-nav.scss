@@ -25,8 +25,10 @@
             img{
               width: 56px;
               height: 56px;
+              min-width: 56px;
+              min-height: 56px;
               position: relative;
-              bottom: 20px;
+              top: 12px;
             }
           }
         }
@@ -63,23 +65,14 @@
         .icons-buttons{
           text-align: right;
           // BUTTONS - white & blue buttons
-          a.white, a.blue{
+          // scaffolding.scss - // buttons
+          a.btn{
             margin-left: 16px;
-            padding: 12px 24px;
-            font-size: 14px;
-            font-weight: 600;
-            border-radius: 0;
-            border: 2px solid $blue-axa;
           }
           // white button
-          a.white{
-            background: $white;
-            color: $blue-axa;
-          }
-          // blue buttons
+          a.white{}
+          // blue button
           a.blue{
-            background: $blue-axa;
-            color: $white;
             white-space: normal;
             word-break: break-word;
           }
@@ -110,10 +103,9 @@
           height: 60px;
           position: absolute;
           left: 0;
-          top: 82px;
-          z-index: 100;
+          top: 80px;
           .main-title{
-            top: 12px;
+            top: 8px;
           }
         }
         .content-right{
@@ -144,11 +136,13 @@
     ul.navbar-ul{
       background: $white;
       width: 88%;
+      height: 100%;
       margin: 0 auto;
       display:table;
       li.navbar-ul-li{
         display: table-cell;
         text-align: center;
+        vertical-align: middle;
         &:first-child{
           text-align: left;
           a{
@@ -196,7 +190,7 @@
         height: calc(100vh - 80px);
         position: absolute;
         right: 0;
-        top: 0;
+        top: 80px;
         display: none;
         li.navbar-ul-li{
           padding: 16px;
@@ -213,8 +207,8 @@
     @media (max-width: 992px){
       ul.navbar-ul{
         width: 100%;
-        height: calc(100vh - 140px);
-        top: 62px;
+        height: calc(100vh - 80px);
+        top: 80px;
         li.navbar-ul-li{
           &:first-child{
             border-top: 1px solid $grey4;

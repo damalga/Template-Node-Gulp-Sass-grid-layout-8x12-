@@ -1,7 +1,7 @@
 // READY & RESIZE
 $(document).ready(readyResize);
 $(window).resize(readyResize);
-function readyResize() {
+function readyResize(){
   // x > ...
   if($(window).width() > 1200){
     $(".navbar-ul").removeAttr("style");
@@ -10,14 +10,19 @@ function readyResize() {
   if($(window).width() > 992){
     $("#btn-white").prependTo(".btn-container");
   };
+  if($(window).width() > 768){
+    $("#slide-img").appendTo("#slide");
+  };
   // x < ...
   if($(window).width() < 1200){
   };
   if($(window).width() < 992){
     $("#btn-white").appendTo(".navbar-ul");
-    // $(".owl-item.active .img").prependTo($(".owl-item.active"));
   };
-}
+  if($(window).width() < 768){
+    $("#slide-img").prependTo("#slide");
+  };
+};
 
 // NAV
 // bars (menu) icon
@@ -34,12 +39,21 @@ $("#times").on('click', function(){
 });
 
 // OWL.CAROUSEL
-$(".owl-carousel").owlCarousel({
-  loop:true,
-  nav:true,
-  responsive:{
-    0:{
-      items:1
+$('.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 256,
+  slidesToShow: 1,
+  adaptiveHeight: true
+});
+
+// fadeOut & fadeIn content-center
+$(window).scroll(function() {
+  if($(window).width() < 1200){
+    if ($(this).scrollTop() > 0) {
+      $("#content-center").fadeOut(128);
+    } else {
+      $("#content-center").fadeIn(128);
     }
-  }
-})
+  };
+});
