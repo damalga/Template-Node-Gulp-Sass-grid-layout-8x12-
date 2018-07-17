@@ -1,0 +1,50 @@
+.slider {
+  height: 512px;
+
+  .slick-list {
+    // !important - Slick aplica estilos en linea que no interesan.
+    height: 100% !important;
+
+    .slick-track {
+      background: $turquoise-blog;
+      height: 100%;
+
+      .slide {
+        .slide-text {
+          padding: 4%;
+          padding-right: 0;
+          .title, .description{
+            margin-bottom: 8%;
+            color: $blue-axa;
+          }
+          .title {
+          }
+          .description{
+            font-size: 18px;
+            font-weight: 500;
+            display: block;
+          }
+          .button-axa-read-more{
+
+          }
+        }
+        img{
+          height: 512px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+
+  }
+
+  @media (max-width: 992px) {
+
+  }
+
+  @media (max-width: 480px) {
+
+  }
+}
