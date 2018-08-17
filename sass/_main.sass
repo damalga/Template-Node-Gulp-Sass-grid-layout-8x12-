@@ -8,69 +8,24 @@ html
       background: $black
   // Handle
   ::-webkit-scrollbar-thumb
-      background: $blue
+      background: $white
   // Handle on hover
   ::-webkit-scrollbar-thumb:hover
-      background: $magenta
+      background: $black
 
 // BODY
 body
-  background: $lighter-gray
-  width: 100%
   padding: 20px
-
-  // MAIN
   main
-
-    // SECTION
-    section
-      height: 76vh
-      &:last-child
-        margin-bottom: 40px
-
-      // TITLE
-      .title
-        width: 50%
-        padding: 2rem
-        display: inline-block
-        h2
-          color: $black
-
-      // TEXT & IMAGES
-      .text, .images
-        width: calc(50vw - 20px)
-        height: 100%
-        padding: 2rem
-        display: table-cell
-
-      // TEXT
-      .text
-        border: 12px solid $black
-        overflow: hidden
-        .text-container
-          color: $black
-          width: 60%
-          padding: 2rem
-          h3
-            margin-bottom: 2rem
-            font-weight: 700
-          p
-            margin: 0
-            line-height: 1.6em
-
-    // SECTION EVEN CHANGES
-    section
-      &:nth-child(even)
-        .text-container
-          float: left
-      &:nth-child(odd)
-        .text-container
-          float: right
-
-      // IMAGES
-      .images
-        background: $blue
-        vertical-align: bottom
-        .image
-          background: $magenta
-          height: 200px
+    position: relative
+    top: 12vh
+    .about-section, .services-section, .projects-section, .contact-section
+      height: 88vh
+    .about-section
+      background: $blue-1
+    .services-section
+      background: $blue-2
+    .projects-section
+      background: $blue-3
+    .contact-section
+      background: $blue-4
